@@ -46,6 +46,7 @@
 							<div>
 								<h1>Synthetic and Real User Monitoring</h1>
 								<h3>Two complementary techniques</h3>
+								<img src="assets/logo_fasterize_white.svg" style="width:10em" />
 							</div>
 						</div>
 					</div>
@@ -69,7 +70,7 @@
 					</div>
 				</section>
 
-				<section class="slides-left">
+				<section class="slides-left" data-background="#282828">
 					<span class="cat-title">Monitoring</span>
 					<h2>Why care about website performance ?</h2>
 					<div class="border"></div>
@@ -95,7 +96,7 @@
 					</div>
 				</section>
 
-				<section class="slides-left">
+				<section class="slides-left" data-background="#282828">
 					<span class="cat-title">Synthetic</span>
 					<h2>Active monitoring</h2>
 					<div class="border"></div>
@@ -117,7 +118,7 @@
 					</div>
 				</section>
 
-				<section class="slides-left">
+				<section class="slides-left" data-background="#282828">
 					<span class="cat-title">synthetic</span>
 					<h2>How it works</h2>
 					<div class="border"></div>
@@ -127,7 +128,7 @@
 					<img src="assets/speedcurve_map.png">
 				</section>
 
-				<section class="slides-left">
+				<section class="slides-left" data-background="#282828">
 					<span class="cat-title">synthetic</span>
 					<h2>Rich data collected</h2>
 					<div class="border"></div>
@@ -147,7 +148,7 @@
 					</div>
 				</section>
 
-				<section class="slides-left">
+				<section class="slides-left" data-background="#282828">
 					<span class="cat-title">synthetic</span>
 					<h2>Speed Index</h2>
 					<div class="border"></div>
@@ -179,11 +180,256 @@
 							<img src="assets/budgets.png">
 						</div>
 						Integration :
-						API for webpagetest (node library) | grunt task
+						API for webpagetest (node library) | grunt-perfbudget
 						</ul>
 					</div>
 				</section>
+				<section class="slides-left" data-background="#282828">
+					<span class="cat-title">synthetic</span>
+					<h2>Competitive Benchmark</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>Answers the question : how fast should I be ?</p>
+						<img src="assets/benchmark-guardian-graph.77.png" />
+					</div>
+				</section>
 
+				<section class="slides-left" data-background="#282828">
+					<span class="cat-title">synthetic</span>
+					<h2>Highlight third party SPOF</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>How bad is the UX if a third party is down ?</p>
+						<div style="width:49%; float:right;">
+							<img src="assets/pattern3.png" />
+						</div>
+						<div style="width:49%;">
+							<img src="assets/spof.png" />
+						</div>
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>Passive Monitoring</h2>
+					<div class="border"></div>
+					<div class="content">
+						<div style="width:40%; float:right; padding:20px;background: white">
+							<img src="assets/pingdom-logo.png" style="max-width:200px"/><br />
+							<img src="assets/logo-cedexis.png" style="max-width:200px"/><br />
+							<img src="assets/google-analytics-logo.png"/><br />
+							<img src="assets/logo_newrelic.png"/>
+						</div>
+						<div style="width:60%; padding:20px;">
+							<ul>
+								<li>Listening to actual traffic as it moves through a system</li>
+								<li>Always on</li>
+								<li>Every user, every browser, every network, anywhere in the world</li>
+								<li>Ability to capture human behavior/events with performance data</li>
+								<li>Only getting better (waterfalls)</li>
+								<li>RUM is a form of passive monitoring</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>How it works</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>A javascript is injected on each page and reports on the page load data for every request that is made for each page.<br /> There’s no need to pre-define your important use cases.</p>
+						<img src="assets/rum_map.png" />
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>Navigation Timing</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p> RUM tools leverage the Navigation Timing.</p>
+						<img src="assets/navtiming.png" style="width:90%"/>
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>Navigation Timing</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>The Navigation Timing is not implemented by Safari (IOS) and IE <= 8</p>
+						<img src="assets/navtiming2.png" />
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>Resource Timing</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>The Resource Timing API allows you to collect complete timing information related to resources in a document.</p>
+						<img src="assets/resourcetiming.png" />
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>Resource Timing</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>Resources fetched from a third-party must provide an additional HTTP header (Timing-Allow-Origin: *) to allow the site to gather detailed network timing data.</p>
+						<img src="assets/resourcetiming2.png" />
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM</span>
+					<h2>Business data</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>The script can capture conversion rate and other business data.</p>
+						<img src="assets/engagement.png" />
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">RUM / Synthetic</span>
+					<h2>Summary</h2>
+					<div class="border"></div>
+					<div class="content">
+						<quotation>“Synthetic monitoring shows you how you relate to your competitors, RUM shows you how you relate to your customers.” – Buddy Brewer (Soasta)</quotation>
+
+						<div style="width:48%; float:right; padding:20px;">
+							RUM
+							<ul>
+								<li>Primary source of trust</li>
+								<li>User behavior / conversion</li>
+								<li>Complete coverage</li>
+							</ul>
+						</div>
+						<div style="width:48%; padding:20px;">
+							SYNTHETIC
+							<ul>
+								<li>Diagnostics</li>
+								<li>Page construction</li>
+								<li>Preproduction - competitive benchmarking</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="black">
+					<span class="cat-title">Pitfalls</span>
+					<h2>Data are hardly comparable between tools</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>Synthetic : take the median (of the SpeedIndex) of 10 runs</p>
+						<p>RUM : remove all the noise that comes with the measure</p>
+						<img src="assets/normal5.png" />
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="black">
+					<span class="cat-title">Pitfalls</span>
+					<h2>Data are hardly comparable between tools</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>Steve Souders compared the data from a RUM tool and Webpagetest on his website.</p>
+
+						<table style="text-align: center;margin: 40px;">
+							<tbody>
+								<tr>
+									<th></th>
+									<th style="padding: 0 1em 0 1em;"><span style="text-decoration: underline;">Chrome 23</span></th>
+									<th style="padding: 0 1em 0 1em;"><span style="text-decoration: underline;">Firefox 16</span></th>
+									<th style="padding: 0 1em 0 1em;"><span style="text-decoration: underline;">IE 9</span></th>
+								</tr>
+								<tr>
+									<td style="text-align: left;">Synthetic First View (secs)</td>
+									<td>4.64</td>
+									<td>4.18</td>
+									<td>4.56</td>
+								</tr>
+								<tr>
+									<td style="text-align: left;">Synthetic Repeat View (secs)</td>
+									<td>2.08</td>
+									<td>2.42</td>
+									<td>1.86</td>
+								</tr>
+								<tr>
+									<td style="text-align: left;">Synthetic 50/50 (secs)</td>
+									<td>3.36</td>
+									<td>3.30</td>
+									<td>3.21</td>
+								</tr>
+								<tr>
+									<td style="text-align: left;">RUM (secs)</td>
+									<td>9.94</td>
+									<td>8.59</td>
+									<td>6.67</td>
+								</tr>
+								<tr>
+									<td style="text-align: left;">RUM data points</td>
+									<td>94</td>
+									<td>603</td>
+									<td>89</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>Conclusion : be cautious about only showing your synthetic page load times – the real user experience is likely quite a bit slower.</p>
+						<p>Note : At the end of the day the two sources of numbers are different and have very different purposes. Neither of them is wrong or right – they are just different tools.</p>
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="black">
+					<span class="cat-title">Analytics</span>
+					<h2>The right number</h2>
+					<div class="border"></div>
+					<div class="content">
+						<img src="assets/numbers.png" />
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="black">
+					<span class="cat-title">Analytics</span>
+					<h2>The right number</h2>
+					<div class="border"></div>
+					<div class="content">
+						<img src="assets/number2.png" />
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="black">
+					<span class="cat-title">Frequent Asked Questions</span>
+					<h2>What impact does website performance have on your actual business ?</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>Correlation Business / performance</p>
+						<p>Test A/B are better than test before / after.</p>
+						<p>Fasterize will optimize only pages of a given population.</p>
+						<p>Analyse an impact on business with enough data (months may be required)</p>
+						<img src="assets/analytics.png" />
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="black">
+					<span class="cat-title">Frequent Asked Questions</span>
+					<h2>What impact does website performance have on your actual business ?</h2>
+					<div class="border"></div>
+					<div class="content">
+						<div style="width:48%; float:right;">
+							Bottom of the funnel
+							<img src="assets/bottom_funnel.png">
+							<p>However, there is much less impact to conversion when “checkout” pages degrade.</p>
+						</div>
+						<div style="width:48%;">
+							Top of the funnel
+							<img src="assets/top_funnel.png">
+							<p>For a typical eCommerce site, conversion rate drops by up to 50% when “browse” pages increase from 1 to 6 seconds</p>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
