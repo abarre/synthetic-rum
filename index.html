@@ -40,20 +40,150 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="#164B6F">
-					<h1>A Fasterize presentation</h1>
-					<h3>Fasterize template</h3>
-					<p>
-						<small>Created by Fasterize</small>
-						1
-					</p>
+				<section data-background="assets/Bridge.jpg">
+					<div style="display: table; height: 1150px; overflow: hidden;">
+						<div style="display: table-cell; vertical-align: middle;">
+							<div>
+								<h1>Synthetic and Real User Monitoring</h1>
+								<h3>Two complementary techniques</h3>
+							</div>
+						</div>
+					</div>
 				</section>
+				<section class="slides-left" data-background="#164B6F">
+					<span class="cat-title">Presentation</span>
+					<h2>I'm Anthony BARRE</h2>
+					<div class="border"></div>
+					<div class="content">
+						<ul style="list-style-type: none;">
+							<li>I'm a full stack developper at Fasterize</li>
+							<li>twitter : @AnthoBarre</li>
+						</ul>
+						<ul style="list-style-type: none;">
+							<li><img src="assets/logo_fasterize_white.svg" style="width:15em"></li>
+							<li>Fasterize is an all-in-one website accelerator.</li>
+							<li>It is an automated web performance optimization service (SAAS) used by many high traffic websites. <br />
+									Fasterized websites are already SPDY and SSL enabled and take fully part of the next gen web.
+							</li>
+						</ul>
+					</div>
+				</section>
+
 				<section class="slides-left">
-					<span class="cat-title">Real User Monitoring</span>
-					<h2>A Fasterize presentation</h2>
-					<div class="border"/>
-					<div class="content">content</div>
+					<span class="cat-title">Monitoring</span>
+					<h2>Why care about website performance ?</h2>
+					<div class="border"></div>
+					<div class="content">
+						<div style="width:50%; float:right; padding:20px;">
+							<p>Two predominant end-user monitoring techniques :</p>
+							<br />
+							<ul>
+								<li>Active monitoring</li>
+								<li>Passive monitoring</li>
+							</ul>
+						</div>
+						<div style="width:50%; padding:20px;">
+							<p>Website performance has a direct impact on every metric you care about.</p>
+							<ul>
+								<li>Traffic</li>
+								<li>Conversions</li>
+								<li>Revenue</li>
+								<li>Customer satisfaction</li>
+								<li>Return visits</li>
+							</ul>
+						</div>
+					</div>
 				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">Synthetic</span>
+					<h2>Active monitoring</h2>
+					<div class="border"></div>
+					<div class="content">
+						<div style="width:50%; float:right; padding:20px;">
+							<img src="assets/wpt_logo.jpg" /><br />
+							<img src="assets/speedcurve.png"/>
+						</div>
+						<div style="width:50%; padding:20px;">
+							<ul>
+								<li>Simulated health-checks of the system and it’s parts</li>
+								<li>Scripted journeys through an application</li>
+								<li>"Creation" of a singular or set of events and/or actions</li>
+								<li>Consistent “clean room” baseline</li>
+								<li>Nothing to install</li>
+								<li>Synthetic is a form of active monitoring</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">synthetic</span>
+					<h2>How it works</h2>
+					<div class="border"></div>
+					<div class="content">
+						The testing is conducted on servers in datacenters using a throttled connection to try and mimic the conditions an average user might experience. Pages are loaded in real web browser and performance metrics collected.
+					</div>
+					<img src="assets/speedcurve_map.png">
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">synthetic</span>
+					<h2>Rich data collected</h2>
+					<div class="border"></div>
+					<div class="content">
+						<div style="width:48%; float:right; padding:20px;">
+							Filmstrip
+							<img src="assets/tools-webpagetest-filmstrip.png"><br />
+							Indicators based on the rendering
+							<img src="assets/indicateurs2.png">
+						</div>
+						<div style="width:48%; padding:20px;">
+							Waterfall, HTTP Header
+							<img src="assets/webpagetest-waterfall.png"><br />
+							Indicators based on the loading (network)
+							<img src="assets/indicateurs1.png">
+						</div>
+					</div>
+				</section>
+
+				<section class="slides-left">
+					<span class="cat-title">synthetic</span>
+					<h2>Speed Index</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>
+							It works by measuring how much of the above-the-fold content is visually complete over time until it is 100% complete.
+							Smaller score is better. <br />Best correlation to the user exeperience (render time)
+						</p>
+						<img src="assets/speed-index.png"><br />
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="#282828">
+					<span class="cat-title">synthetic</span>
+					<h2>Performance budget / CI integration</h2>
+					<div class="border"></div>
+					<div class="content">
+						<p>The purpose of a performance budget is to make sure you focus on performance throughout a project.</p>
+
+						<div style="width30%; float:right; padding:20px;">
+							<ul>
+								<li>Milestone timings</li>
+								<li>Speed Index</li>
+								<li>Quantity based metrics</li>
+								<li>Rule based metrics</li>
+							</ul>
+						</div>
+						<div style="width:68%; padding:20px;">
+							<img src="assets/budgets.png">
+						</div>
+						Integration :
+						API for webpagetest (node library) | grunt task
+						</ul>
+					</div>
+				</section>
+
 			</div>
 		</div>
 
@@ -72,7 +202,6 @@
     		slideNumber:true,
 
 				transition: 'none', // none/fade/slide/convex/concave/zoom
-				width: "100%",
 				margin: 0.1,
 				minScale: 0.8,
     		maxScale: 1.3,
