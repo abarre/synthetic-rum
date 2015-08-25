@@ -40,25 +40,21 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-background="#164B6F">
 					<h1>A Fasterize presentation</h1>
 					<h3>Fasterize template</h3>
 					<p>
 						<small>Created by Fasterize</small>
+						1
 					</p>
 				</section>
-
+				<section class="slides-left">
+					<span class="cat-title">Real User Monitoring</span>
+					<h2>A Fasterize presentation</h2>
+					<div class="border"/>
+					<div class="content">content</div>
+				</section>
 			</div>
-
-			<div class="icon-bar">
-				<p>
-					<a class="image" href="http://www.fasterize.com" style="font-size:28px; font-family: AvenirNext-Medium,Arial,sans-serif; color: #FFF;"><img src="assets/fasterize_logo_mini_blanc.svg" class="plain"/><span class="logo_title">fasterize</span></a>
-					<a class="image" href="https://twitter.com/fasterize"><img class="plain" src="assets/tweet-me.svg" height="35"><span>twitter</span></a>
-          <a class="image" href="mailto:info@fasterize.com"><img class="plain" src="assets/email-me.svg" height="35"><span>email</span></a>
-          <a class="image" href="http://blog.fasterize.com/"><img class="plain" src="assets/blog-me.svg" height="35"><span>blog</span></a>
-        </p>
-			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -69,12 +65,17 @@
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
+    		slideNumber:true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				width: "100%",
+				margin: 0.1,
+				minScale: 0.8,
+    		maxScale: 1.3,
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -86,7 +87,6 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
-
 		</script>
 
 	</body>
