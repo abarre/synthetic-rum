@@ -62,7 +62,7 @@
 						<ul style="list-style-type: none;">
 							<li><img src="assets/logo_fasterize_white.svg" style="width:15em"></li>
 							<li>Fasterize is an all-in-one website accelerator.</li>
-							<li>It is an automated web performance optimization service (SAAS) used by many high traffic websites. <br />
+							<li>It is an automated web performance optimization service (SaaS) used by many high traffic websites. <br />
 									Fasterized websites are already SPDY and SSL enabled and take fully part of the next gen web.
 							</li>
 						</ul>
@@ -75,11 +75,11 @@
 					<div class="border"></div>
 					<div class="content">
 						<div style="width:50%; float:right; padding:20px;">
-							<p>Two predominant end-user monitoring techniques :</p>
+							<p>Two predominant end-user monitoring techniques:</p>
 							<br />
 							<ul>
-								<li>Active monitoring</li>
-								<li>Passive monitoring</li>
+								<li>Active monitoring (synthetic)</li>
+								<li>Passive monitoring (RUM)</li>
 							</ul>
 						</div>
 						<div style="width:50%; padding:20px;">
@@ -89,7 +89,7 @@
 								<li>Conversions</li>
 								<li>Revenue</li>
 								<li>Customer satisfaction</li>
-								<li>Return visits</li>
+								<li>Returning visits</li>
 							</ul>
 						</div>
 					</div>
@@ -106,9 +106,9 @@
 						</div>
 						<div style="width:50%; padding:20px;">
 							<ul>
-								<li>Simulated health-checks of the system and it’s parts</li>
-								<li>Scripted journeys through an application</li>
-								<li>"Creation" of a singular or set of events and/or actions</li>
+								<li>Simulated health-checks of the system and its parts</li>
+								<li>Scripted scenarii through an application</li>
+								<li>"Creation" of a single or set of events and/or actions</li>
 								<li>Consistent “clean room” baseline</li>
 								<li>Nothing to install</li>
 								<li>Synthetic is a form of active monitoring</li>
@@ -122,7 +122,7 @@
 					<h2>How it works</h2>
 					<div class="border"></div>
 					<div class="content">
-						The testing is conducted on servers in datacenters using a throttled connection to try and mimic the conditions an average user might experience. Pages are loaded in real web browser and performance metrics collected.
+						The testing is run on servers in datacenters using a throttled connection to try and mimic the conditions an average user might experience. Pages are loaded in real web browsers and performance metrics are collected.
 					</div>
 					<img src="assets/speedcurve_map.png">
 				</section>
@@ -135,15 +135,17 @@
 						<div style="width:48%; float:right; padding:20px;">
 							Filmstrip
 							<img src="assets/tools-webpagetest-filmstrip.png"><br />
-							Indicators based on the rendering
+							Indicators based on rendering
 							<img src="assets/indicateurs2.png">
+              Content type distibution (JS, CSS, etc...)
 						</div>
 						<div style="width:48%; padding:20px;">
 							Waterfall, HTTP Header
 							<img src="assets/webpagetest-waterfall.png"><br />
-							Indicators based on the loading (network)
+							Indicators based on loading (network)
 							<img src="assets/indicateurs1.png">
-						</div>
+              Domains distribution
+            </div>
 					</div>
 				</section>
 
@@ -154,7 +156,7 @@
 					<div class="content">
 						<p>
 							It works by measuring how much of the above-the-fold content is visually complete over time until it is 100% complete.
-							Smaller score is better. <br />Best correlation to the user exeperience (render time)
+							Smaller score is better. <br />Best correlation to the user exeperience (render time).
 						</p>
 						<img src="assets/speed-index.png"><br />
 					</div>
@@ -188,7 +190,7 @@
 					<h2>Competitive Benchmark</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>Answers the question : how fast should I be ?</p>
+						<p>Answers the question: how fast should I be?</p>
 						<img src="assets/benchmark-guardian-graph.77.png" />
 					</div>
 				</section>
@@ -198,7 +200,7 @@
 					<h2>Highlight third party SPOF</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>How bad is the UX if a third party is down ?</p>
+						<p>How bad is the UX if a third party is down?</p>
 						<div style="width:49%; float:right;">
 							<img src="assets/pattern3.png" />
 						</div>
@@ -237,7 +239,7 @@
 					<h2>How it works</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>A javascript is injected on each page and reports on the page load data for every request that is made for each page.<br /> There’s no need to pre-define your important use cases.</p>
+						<p>A javascript is injected on each page and reports the page load data for every request that is made for each page.<br /> There’s no need to pre-define your important use cases.</p>
 						<img src="assets/rum_map.png" />
 					</div>
 				</section>
@@ -257,7 +259,7 @@
 					<h2>Navigation Timing</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>The Navigation Timing is not implemented by Safari (IOS) and IE <= 8</p>
+						<p>The Navigation Timing is not implemented by Safari (iOS) and IE <= 8</p>
 						<img src="assets/navtiming2.png" />
 					</div>
 				</section>
@@ -376,7 +378,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<p>Conclusion : be cautious about only showing your synthetic page load times – the real user experience is likely quite a bit slower.</p>
+						<p>Conclusion : be cautious about only showing your synthetic page load times – the real user experience is likely to be quite a bit slower.</p>
 						<p>Note : At the end of the day the two sources of numbers are different and have very different purposes. Neither of them is wrong or right – they are just different tools.</p>
 					</div>
 				</section>
@@ -400,21 +402,21 @@
 				</section>
 
 				<section class="slides-left" data-background="black">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>What impact does website performance have on your actual business ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>What impact does website performance have on your actual business?</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>Correlation Business / performance</p>
+						<p>Correlation Business / performance.</p>
 						<p>Test A/B are better than test before / after.</p>
 						<p>Fasterize will optimize only pages of a given population.</p>
-						<p>Analyse an impact on business with enough data (months may be required)</p>
+						<p>Analyse impact on business with enough data (months may be required).</p>
 						<img src="assets/analytics.png" />
 					</div>
 				</section>
 
 				<section class="slides-left" data-background="black">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>What impact does website performance have on your actual business ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>What impact does website performance have on your actual business?</h2>
 					<div class="border"></div>
 					<div class="content">
 						<div style="width:48%; float:right;">
@@ -431,8 +433,8 @@
 				</section>
 
 				<section class="slides-left" data-background="black">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>How are third parties impacting my site ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>How are third parties impacting my site?</h2>
 					<div class="border"></div>
 					<div class="content">
 						<img src="assets/third-party-waterfall.png" />
@@ -440,8 +442,8 @@
 				</section>
 
 				<section class="slides-left" data-background="#121617">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>Should I optimize my site for mobile ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>Should I optimize my site for mobile?</h2>
 					<div class="border"></div>
 					<div class="content">
 						<img src="assets/mobile.jpg" />
@@ -449,8 +451,8 @@
 				</section>
 
 				<section class="slides-left" data-background="#282828">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>Should I optimize my site for mobile ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>Should I optimize my site for mobile?</h2>
 					<div class="border"></div>
 					<div class="content">
 						<div style="width:49%; float:right;">
@@ -465,21 +467,21 @@
 				</section>
 
 				<section class="slides-left" data-background="#282828">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>How can I determine the effectiveness of my CDN provider ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>How can I determine the effectiveness of my CDN provider?</h2>
 					<div class="border"></div>
 					<div class="content">
-
 						<img src="assets/pingdom-rum-geographic.png" />
 					</div>
 				</section>
 
 				<section class="slides-left" data-background="#282828">
-					<span class="cat-title">Frequent Asked Questions</span>
-					<h2>Is it applicable for single page app ?</h2>
+					<span class="cat-title">Frequently Asked Questions</span>
+					<h2>Does it make sense for a single page app?</h2>
 					<div class="border"></div>
 					<div class="content">
-						No, RUM and Synthetic can measure only the first page load and can not measure secondary loads via AJAX.
+            No, RUM and Synthetic can measure only the first page load and can not measure subsequent loads via AJAX.
+            Unless you script them.
 					</div>
 				</section>
 
@@ -488,7 +490,7 @@
 						<div style="display: table-cell; vertical-align: middle;">
 							<div>
 								<h1>Synthetic and Real User Monitoring</h1>
-								<h3>Questions ?</h3>
+								<h3>Questions?</h3>
 								<img src="assets/logo_fasterize_white.svg" style="width:10em" />
 							</div>
 						</div>
