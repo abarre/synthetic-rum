@@ -103,7 +103,8 @@
 					<div class="content">
 						<div style="width:50%; float:right; padding:20px;">
 							<img src="assets/wpt_logo.jpg" /><br />
-							<img src="assets/speedcurve.png"/>
+							<img src="assets/speedcurve.png"/><br />
+							<img src="assets/catchpoint-logo.png" style="background:white"/>
 						</div>
 						<div style="width:50%; padding:20px;">
 							<ul>
@@ -112,7 +113,6 @@
 								<li>"Creation" of a single or set of events and/or actions</li>
 								<li>Consistent “clean room” baseline</li>
 								<li>Nothing to install</li>
-								<li>Synthetic is a form of active monitoring</li>
 							</ul>
 						</div>
 					</div>
@@ -214,20 +214,18 @@
 					<h2>Passive Monitoring</h2>
 					<div class="border"></div>
 					<div class="content">
-						<div style="width:40%; float:right; padding:20px;background: white">
+						<div style="width:43%; float:right; padding:20px;background: white">
 							<img src="assets/pingdom-logo.png" style="max-width:200px"/><br />
 							<img src="assets/logo-cedexis.png" style="max-width:200px"/><br />
 							<img src="assets/google-analytics-logo.png"/><br />
 							<img src="assets/logo_newrelic.png"/>
 						</div>
-						<div style="width:60%; padding:20px;">
+						<div style="width:57%; padding:20px;">
 							<ul>
-								<li>Listening to actual traffic as it moves through a system</li>
+								<li>Listening to actual traffic coming on the website</li>
 								<li>Always on</li>
 								<li>Every user, every browser, every network, anywhere in the world</li>
 								<li>Ability to capture human behavior/events with performance data</li>
-								<li>Only getting better (waterfalls)</li>
-								<li>RUM is a form of passive monitoring</li>
 							</ul>
 						</div>
 					</div>
@@ -258,7 +256,7 @@
 					<h2>Navigation Timing</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>The Navigation Timing is not implemented by Safari (IOS) and IE <= 8</p>
+						<p>The Navigation Timing is not implemented by Safari (IOS < 9) and IE <= 8</p>
 						<img src="assets/navtiming2.png" />
 					</div>
 				</section>
@@ -324,7 +322,7 @@
 					<h2>Data are hardly comparable between tools</h2>
 					<div class="border"></div>
 					<div class="content">
-						<p>Synthetic : take the median (of the SpeedIndex) of 10 runs</p>
+						<p>WPT : take the median (of the SpeedIndex) of 10 runs</p>
 						<p>RUM : remove all the noise that comes with the measure</p>
 						<img src="assets/normal5.png" />
 					</div>
@@ -462,6 +460,10 @@
 							Responsive website
 							<img src="assets/responsive2.jpg" />
 						</div>
+						<div>
+							on the abscissa : the width of the screen<br/>
+							on the ordinate : the size of the page in Kb
+						</div>
 					</div>
 				</section>
 
@@ -481,6 +483,25 @@
 					<div class="border"></div>
 					<div class="content">
 						No, RUM and Synthetic can measure only the first page load and can not measure secondary loads via AJAX.
+					</div>
+				</section>
+
+				<section class="slides-left" data-background="#282828">
+					<span class="cat-title">Frequent Asked Questions</span>
+					<h2>When does the page become usable ?</h2>
+					<div class="border"></div>
+					<div class="content">
+						You should consider the User Timing API.<br />
+						Modern synthetic and Rum tools can collect those metrics.
+						<br />
+						<img src="assets/usable.png" />
+
+						<pre><code data-trim style="font-size:18px">
+window.performance.mark('mark_fully_loaded');
+window.performance.measure('measure_load_from_dom', 'domComplete', 'mark_fully_loaded');
+var items = window.performance.getEntriesByType('measure');
+						</code></pre>
+
 					</div>
 				</section>
 
